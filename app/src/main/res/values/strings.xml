@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Account Wallet</string>
+
+    <!-- title -->
+    <string name="title_main" translatable="false">Account wallet</string>
+    <string name="title_add_account">Add new account</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Menu -->
+    <string name="menu_search">Search</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_scan">Qr scanner</string>
+
+    <!-- Buttons -->
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_theme_light">Light</string>
+    <string name="button_theme_dark">Night</string>
+    <string name="button_theme_system">System</string>
+    <string name="button_add_account">Add new account</string>
+    <string name="button_create">Add account</string>
+    <string name="button_delete">Delete account</string>
+    <string name="button_delete_email">Delete email</string>
+    <string name="button_share">Share account</string>
+    <string name="button_share_email">Share email</string>
+    <string name="button_copy">Copy account link</string>
+    <string name="button_copy_email">Copy email address</string>
+    <string name="button_open_link">Open in browser</string>
+    <string name="button_click_to_copy_account">Click to copy the link to your account</string>
+
+    <!-- Hints -->
+    <string name="hint_search">Search</string>
+    <string name="hint_create_account" translatable="false">%1$s profile id</string>
+    <string name="hint_create_email">email address</string>
+    <string name="hint_create_custom_web" translatable="false">website link</string>
+
+    <!-- AccountType -->
+    <string name="account_type_email">Email address</string>
+    <string name="account_type_soc">Social network</string>
+    <string name="account_type_any">Any</string>
+
+    <!-- SnackBars -->
+    <string name="snackbar_link_copy">Link copied to clipboard</string>
+    <string name="snackbar_restart">You need to restart the app to update the theme</string>
+
+    <!-- Text -->
+    <string name="text_account_type_description">Click to customize</string>
+    <string name="text_new_account_footer">At the moment, not all social networks are supported, but you can try adding the site you need yourself</string>
+    <string name="text_empty_title">Hmmm, looks like you haven\'t added an account yet, do it now!</string>
+    <string name="text_empty_desc">Click on the circle to add your first account</string>
+    <string name="text_link_info">Your profile link looks like this:</string>
+    <string name="text_create_desc">Enter your unique account id %1$s and then you can share your profile with your friends in one click!</string>
+    <string name="text_create_desc_email">Enter your email so you can quickly copy or share your email address!</string>
+    <string name="text_create_desc_custom_web">Enter the link to the desired site and you can share your link with your friends in one click!</string>
+    <string name="text_qr_desc">You can easily share your link using a QR code. Just ask to scan the code above or copy it yourself and share the link</string>
+    <string name="text_qr_desc_email">You can easily share your email using a QR code. Just ask to scan the code above or copy it yourself and share the link</string>
+    <string name="text_link_to_account">Link to your account</string>
+    <string name="text_link_to_email">Link to your email</string>
+
+    <!-- Alert dialogs -->
+    <string name="alert_delete_title">Delete account</string>
+    <string name="alert_delete_desc">Are you sure you want to delete this account?</string>
+
+    <!-- Preference Titles -->
+    <string name="pref_title_dynamic_color">Use dynamic color theme</string>
+    <string name="pref_title_theme">UI theme</string>
+
+    <!-- Preference Subtitles -->
+    <string name="pref_subtitle_dynamic_color">The colors in the app will automatically adjust to your phone\'s wallpaper (Works with android version 12 and above)</string>
+    <string name="pref_subtitle_theme">UI theme startup settings</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp"
+    style="@style/SheetStyle"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonOpenLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/button_open_link"
+        android:textAlignment="textStart"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        app:icon="@drawable/ic_baseline_web_24"
+        app:iconPadding="20dp" />
+
+    <Button
+        android:id="@+id/buttonCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/button_copy"
+        android:textAlignment="textStart"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        app:icon="@drawable/ic_baseline_link_24"
+        app:iconPadding="20dp" />
+
+    <Button
+        android:id="@+id/buttonShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/button_share"
+        android:textAlignment="textStart"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        app:icon="@drawable/ic_baseline_share_24"
+        app:iconPadding="20dp" />
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/button_delete"
+        android:textAlignment="textStart"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        app:icon="@drawable/ic_baseline_delete_24"
+        app:iconPadding="20dp" />
+
+</LinearLayout>

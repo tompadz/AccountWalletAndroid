@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SortTitleStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@android:color/system_accent1_600</item>
+    </style>
+
+    <style name="Theme.ShareMyAccountNative" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/main_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorSecondaryVariant">@color/main_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/system_neutral1_50</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="materialDividerStyle">DividerStyle</item>
+        <item name="scrollBackground">@android:color/system_neutral1_0</item>
+    </style>
+
+    <style name="TextLink" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@android:color/system_accent1_400</item>
+        <item name="android:textColorLink">@android:color/system_accent1_400</item>
+    </style>
+
+    <style name="TextAccountSheet" parent="Widget.AppCompat.TextView">
+        <item name="android:padding">16dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@android:color/system_neutral1_50</item>
+    </style>
+
+    <style name="SheetStyle">
+        <item name="android:background">@android:color/system_neutral1_0</item>
+    </style>
+
+    <style name="AppBarLayoutStyle" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@android:color/system_neutral1_50</item>
+    </style>
+
+    <style name="CollapsingToolbarStyle" parent="Widget.Material3.CollapsingToolbar">
+        <item name="contentScrim">@android:color/system_neutral1_50</item>
+    </style>
+
+    <style name="DividerStyle" parent="Widget.MaterialComponents.MaterialDivider">
+        <item name="maxHeight">0.5dp</item>
+        <item name="background">@android:color/system_neutral1_50</item>
+    </style>
+
+</resources>

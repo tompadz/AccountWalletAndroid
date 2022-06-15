@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    style="@style/SheetStyle"
+    tools:context=".ui.sheets.SheetSettingsTheme">
+
+    <Button
+        android:id="@+id/buttonLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        android:text="@string/button_theme_light" />
+
+    <Button
+        android:id="@+id/buttonDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        android:text="@string/button_theme_dark" />
+
+    <Button
+        android:id="@+id/buttonSystem"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.Material3.Button.TextButton"
+        android:layout_height="wrap_content"
+        android:text="@string/button_theme_system" />
+</LinearLayout>

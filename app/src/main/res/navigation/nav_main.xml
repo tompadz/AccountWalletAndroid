@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.xslite.sharemyaccountnative.ui.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_addAccountFragment"
+            app:destination="@id/addAccountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAccountFragment"
+        android:name="com.xslite.sharemyaccountnative.ui.fragments.AddAccountFragment"
+        android:label="fragment_add_account"
+        tools:layout="@layout/fragment_add_account" >
+        <action
+            android:id="@+id/action_addAccountFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.xslite.sharemyaccountnative.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.xslite.sharemyaccountnative.ui.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <argument
+            android:name="account"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.xslite.sharemyaccountnative.ui.fragments.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <argument
+            android:name="account"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.xslite.sharemyaccountnative.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

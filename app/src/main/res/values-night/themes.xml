@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ShareMyAccountNative" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/main_color</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/dark_background2</item>
+        <!-- Customize your theme here. -->
+        <item name="materialDividerStyle">DividerStyle</item>
+        <item name="scrollBackground">@color/dark_background</item>
+    </style>
+
+    <style name="SortTitleStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/dark_fontSecond</item>
+    </style>
+
+    <style name="TextLink" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textColorLink">@color/main_color</item>
+    </style>
+
+    <style name="TextAccountSheet" parent="Widget.AppCompat.TextView">
+        <item name="android:padding">16dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/dark_background2</item>
+    </style>
+
+    <style name="SheetStyle">
+        <item name="android:background">@color/dark_background</item>
+    </style>
+
+    <style name="TopAppBarStyle" parent="Widget.Material3.Toolbar.Surface">
+        <item name="title">Title</item>
+        <item name="titleCentered">true</item>
+    </style>
+
+    <style name="AppBarLayoutStyle" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@color/dark_background2</item>
+    </style>
+
+    <style name="CollapsingToolbarStyle" parent="Widget.Material3.CollapsingToolbar">
+        <item name="contentScrim">@color/dark_background2</item>
+    </style>
+
+    <style name="DividerStyle" parent="Widget.MaterialComponents.MaterialDivider">
+        <item name="maxHeight">0.5dp</item>
+        <item name="background">@color/dark_background2</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ScrollStyle">
+        <item name="backgroundColor">@color/dark_background</item>
+    </style>
+</resources>

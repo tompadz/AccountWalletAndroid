@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.CreateAccountFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="192dp"
+        app:liftOnScroll="true"
+        style="@style/AppBarLayoutStyle"
+        app:liftOnScrollTargetViewId="@id/recyclerView"
+        android:layout_width="match_parent">
+
+        <com.xslite.sharemyaccountnative.ui.custom.CollapsingToolbar
+            android:id="@+id/collapsingToolbar"
+            style="@style/CollapsingToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_scrollFlags="noScroll"
+            app:titleCollapseMode="fade"
+            app:toolbarId="@+id/toolbar">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24" />
+        </com.xslite.sharemyaccountnative.ui.custom.CollapsingToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorBackground"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:breakStrategy="balanced"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_light"
+                tools:text="description" />
+
+            <TextView
+                android:id="@+id/textLinkDescr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/text_link_info"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textLink"
+                style="@style/TextLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:visibility="gone"
+                tools:text="link"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/button_create"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

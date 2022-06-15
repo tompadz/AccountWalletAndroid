@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SettingsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        style="@style/AppBarLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        app:liftOnScroll="true"
+        app:liftOnScrollTargetViewId="@id/recyclerView">
+
+        <com.xslite.sharemyaccountnative.ui.custom.CollapsingToolbar
+            android:id="@+id/collapsingToolbar"
+            style="@style/CollapsingToolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title="@string/title_settings"
+            app:titleCollapseMode="fade"
+            app:toolbarId="@+id/toolbar">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24" />
+        </com.xslite.sharemyaccountnative.ui.custom.CollapsingToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/scrollBackground"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.xslite.sharemyaccountnative.ui.custom.ButtonSettings
+                android:id="@+id/buttonSettingsDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonType="TextItem"
+                app:subtitle="@string/pref_subtitle_theme"
+                app:title="@string/pref_title_theme" />
+
+            <com.xslite.sharemyaccountnative.ui.custom.ButtonSettings
+                android:id="@+id/buttonSettingsToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonType="Switch"
+                app:subtitle="@string/pref_subtitle_dynamic_color"
+                app:title="@string/pref_title_dynamic_color" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
