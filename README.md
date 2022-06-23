@@ -5,6 +5,8 @@
 **Account Wallet** is an application that allows you to quickly share accounts on social networks or services.
 You can easily access the accounts you need and send the QR code or link through the app. You can also save to your wallet not only accounts, but also personal e-mail or the site you need.
 
+You can download the application through [Google Play](https://play.google.com/store/apps/details?id=com.xslite.sharemyaccountnative)
+
 |![screenshot](https://github.com/tompadz/AccountWalletAndroid/blob/main/information/screen1.png?raw=true)|![screenshot](https://github.com/tompadz/AccountWalletAndroid/blob/main/information/screen4.png?raw=true)|
 |--|--|
 
